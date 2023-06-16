@@ -269,7 +269,7 @@ body.vertical-layout.vertical-menu.menu-expanded .navbar .navbar-container {
 /*--------------------- Dashbaord css start---------------------------- */
 
 
-form .form-control::placeholder{
+form .form-control::placeholder {
   color: var(--placeholder-color);
 }
 
@@ -309,12 +309,12 @@ form .form-control::placeholder{
   width: 50%;
 }
 
-.tab-pane.fade{
+.tab-pane.fade {
   display: none;
 }
 
 
-.tab-pane.fade.active{
+.tab-pane.fade.active {
   display: block;
 }
 
@@ -655,7 +655,7 @@ table.dataTable tbody td {
   padding: 0.2rem 1rem;
 }
 
-.vertical-tab-panel table thead{
+.vertical-tab-panel table thead {
   background-color: #e4e4e4;
 }
 
@@ -735,38 +735,51 @@ input[type="text"].selectivity-multiple-input {
   border-color: #003f77;
 }
 
-.badge-primary{
+.badge-primary {
   background-color: var(--primary);
 }
 
-.badge-pending{
+.badge-pending {
   background-color: var(--pending);
 }
 
-.badge-approved{
+.badge-approved {
   background-color: var(--approved);
 }
 
-.badge-rejected{
+.badge-rejected {
   background-color: var(--rejected);
 }
 
-.vertical-tabs-wrapper .nav-link.active{
+.vertical-tabs-wrapper .nav-link.active {
   background-color: #c5c5c5;
   border-radius: 0;
   border-right: 5px solid var(--pending);
 }
 
-.form-group input[type="date"].form-control, .form-group input[type="time"].form-control, .form-group input[type="datetime-local"].form-control{
+.form-group input[type="date"].form-control,
+.form-group input[type="time"].form-control,
+.form-group input[type="datetime-local"].form-control {
   padding: 0 !important;
   height: calc(2.75rem + -7px);
 }
 
-.custom-control-input:checked ~ .custom-control-label::after{
+.custom-control-input:checked~.custom-control-label::after {
   color: var(--approved) !important;
 }
 
-.pl-35{
+.pl-35 {
   padding-left: 35px;
   padding-top: 1rem;
+}
+
+input.form-control:disabled,
+textarea.form-control:disabled,
+input.form-control[readonly],
+select.form-control:disabled,
+select.form-control[readonly] {
+  border-style: solid;
+  background-color: #eee;
+  border: none;
+  border-bottom: 1px solid #000000;
 }

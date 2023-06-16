@@ -395,11 +395,11 @@
                                                         name="editUserIp" value="Soham" />
                                                 </div>
 
-                                                <a href="javascript:;"
+                                                <a href="javascript:;" class="edit-icon d-none"
                                                     onclick="showEditInput('#editUserIp','#userNameSpan','.editImg1')">
                                                     <img class="editImg1" src="./app-assets/images/svg/pencil.svg"
                                                         alt="Edit User Name" />
-                                                </a href="javascript:;">
+                                                </a>
 
                                             </div>
                                             <div class="d-flex justify-content-between align-items-center mt-1"
@@ -412,11 +412,11 @@
                                                         name="editUserEmail" value="soham@yashussunlimited.com" />
                                                 </div>
 
-                                                <a href="javascript:;"
+                                                <a href="javascript:;" class="edit-icon d-none"
                                                     onclick="showEditInput('#editUserEmail','#userEmailSpan','.editImg2')">
                                                     <img class="editImg2" src="./app-assets/images/svg/pencil.svg"
                                                         alt="Edit User Name" />
-                                                </a href="javascript:;">
+                                                </a>
                                             </div>
                                             <div class="statusbadgeDiv mt-1">
                                                 <span class="badge badge-pills badge-pending badge-rounded">
@@ -472,11 +472,11 @@
                                         <div class="tab-content" id="v-pills-tabContent">
                                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                                 aria-labelledby="v-pills-home-tab">
-                                                <form class="row p-2">
+                                                <form class="row p-2" id="editUserForm">
                                                     <div class="col-lg-6 col-md-6">
                                                         <fieldset class="form-group pr-1">
                                                             <label for="userProfile">User Profile</label>
-                                                            <select id="userProfile"
+                                                            <select id="userProfile" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select User Profile"
                                                                 name="userProfile">
@@ -489,7 +489,7 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <fieldset class="form-group pr-1">
                                                             <label for="userRole">User Role</label>
-                                                            <select id="userRole"
+                                                            <select id="userRole" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select User Role" name="userRole">
                                                                 <option>Option 1</option>
@@ -504,13 +504,13 @@
                                                             <label for="userName">User Name</label>
                                                             <input type="text" class="form-control"
                                                                 placeholder="Enter User Name" name="userName"
-                                                                id="userName" />
+                                                                id="userName" disabled />
                                                         </fieldset>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <fieldset class="form-group pr-1">
                                                             <label for="employeeCode">Employee/User Code</label>
-                                                            <select id="employeeCode"
+                                                            <select id="employeeCode" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select Employee/User Code"
                                                                 name="employeeCode">
@@ -523,7 +523,7 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <fieldset class="form-group pr-1">
                                                             <label for="branchCode">Branch Code</label>
-                                                            <select id="branchCode"
+                                                            <select id="branchCode" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select Branch Code" name="branchCode">
                                                                 <option>Option 1</option>
@@ -538,13 +538,13 @@
                                                             <label for="branchName">Branch Name</label>
                                                             <input type="text" class="form-control" id="branchName"
                                                                 name="branchName" disabled
-                                                                placeholder="Enter Branch Name" />
+                                                                placeholder="Enter Branch Name" disabled />
                                                         </fieldset>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <fieldset class="form-group pr-1">
                                                             <label for="departmentCode">Department Code</label>
-                                                            <select id="departmentCode"
+                                                            <select id="departmentCode" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select Department Code"
                                                                 name="departmentCode">
@@ -568,7 +568,7 @@
                                                         <fieldset class="form-group pr-1">
                                                             <label for="companyCode">Company Code</label>
                                                             <!-- <input type="text" class="form-control" id="first_name"> -->
-                                                            <select id="companyCode"
+                                                            <select id="companyCode" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select Company Code"
                                                                 name="companyCode">
@@ -583,7 +583,8 @@
                                                         <fieldset class="form-group pr-1">
                                                             <label for="companyName">Company Name</label>
                                                             <input id="companyName" type="text" class="form-control"
-                                                                placeholder="Enter Company Name" id="companyName" />
+                                                                placeholder="Enter Company Name" id="companyName"
+                                                                disabled />
                                                         </fieldset>
                                                     </div>
 
@@ -591,7 +592,8 @@
                                                         <fieldset class="form-group pr-1">
                                                             <label for="userEmail">Email Address</label>
                                                             <input type="text" class="form-control" name="userEmail"
-                                                                placeholder="Enter Email Address" id="userEmail" />
+                                                                placeholder="Enter Email Address" id="userEmail"
+                                                                disabled />
                                                         </fieldset>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
@@ -599,14 +601,14 @@
                                                             <label for="mobileNumber">Mobile Number</label>
                                                             <input type="text" class="form-control"
                                                                 placeholder="Enter Mobile Number" name="mobileNumber"
-                                                                id="mobileNumber" />
+                                                                id="mobileNumber" disabled />
                                                         </fieldset>
                                                     </div>
 
                                                     <div class="col-lg-6 col-md-6">
                                                         <fieldset class="form-group pr-1">
                                                             <label for="supervisorCode">Supervisor Code</label>
-                                                            <select id="supervisorCode"
+                                                            <select id="supervisorCode" disabled
                                                                 class="single-select-box selectivity-input"
                                                                 data-placeholder="Select Company Code"
                                                                 name="supervisorCode">
@@ -622,7 +624,7 @@
                                                             <label for="expiryDate">Expiry Date</label>
                                                             <input type="date" class="form-control"
                                                                 placeholder="Select Expiry Date" name="expiryDate"
-                                                                id="expiryDate" />
+                                                                id="expiryDate" disabled />
                                                         </fieldset>
                                                     </div>
 
@@ -631,7 +633,8 @@
                                                             <label for="userAddress">Address</label>
                                                             <textarea type="text" class="form-control"
                                                                 name="userAddress" id="userAddress"
-                                                                placeholder="Enter Address" rows="1"></textarea>
+                                                                placeholder="Enter Address" rows="1"
+                                                                disabled></textarea>
                                                         </fieldset>
                                                     </div>
                                                 </form>
@@ -728,24 +731,46 @@
 
     <script>
         $(document).ready(function () {
+
+            var url = new URL(window.location.href);
+            var params = new URLSearchParams(url.search);
+            var editMode = (params.get('editPage') ? true : false);
+
+            if (editMode) {
+                $(".edit-icon").removeClass('d-none');
+                $("#editUserForm .form-control,#editUserForm .selectivity-input").attr('disabled', false);
+                // $('.selectivity-input').select2({
+                //     allowClear: true
+                // });
+            }
+
             $('.selectivity-input').select2({
                 allowClear: true
             });
 
-            $("#appsTable").DataTable({
-                dom:"",
-            })
+            var appsTable = $("#appsTable").DataTable({
+                dom: "",
+                // initComplete:function(){
+                //     if(editMode){
+                //         appsTable.column(0).visible(false);
+                //     }
+                // }
+            });
+
+            // appsTable.columns(0).visible(false, false);
+            // appsTable.columns.adjust().draw(true);
+
         });
 
-        function showEditInput(showId,hideId,iconImg){
-            if($(showId).hasClass('d-none')){
+        function showEditInput(showId, hideId, iconImg) {
+            if ($(showId).hasClass('d-none')) {
                 $(showId).removeClass('d-none');
                 $(hideId).addClass('d-none');
-                $(iconImg).attr('src','./app-assets/images/svg/check-circle-svgrepo-com.svg');
-            }else{
+                $(iconImg).attr('src', './app-assets/images/svg/check-circle-svgrepo-com.svg');
+            } else {
                 $(hideId).removeClass('d-none');
                 $(showId).addClass('d-none');
-                $(iconImg).attr('src','./app-assets/images/svg/pencil.svg');
+                $(iconImg).attr('src', './app-assets/images/svg/pencil.svg');
             }
         }
     </script>
