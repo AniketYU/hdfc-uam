@@ -127,7 +127,7 @@ body.vertical-layout.vertical-menu.menu-collapsed .main-menu {
     text-align: left;
     background-color: #00bcd4;
     border-color: #00bcd4;
-    padding: 15px 20px; }
+    padding: 13px 20px; }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > span.menu-title,
       body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content a.menu-title {

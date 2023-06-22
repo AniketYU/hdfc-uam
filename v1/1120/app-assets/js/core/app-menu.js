@@ -894,7 +894,7 @@
             }
 
             if ($body.hasClass("material-vertical-layout")) {
-              fromTop = $(".user-profile").height() + $this.position().top;
+              fromTop = $(".user-profile").height() + $this.position().top + 10;
             }
 
             // Get IE or Edge browser version

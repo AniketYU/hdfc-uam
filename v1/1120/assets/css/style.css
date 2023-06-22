@@ -120,6 +120,17 @@ body.vertical-layout.vertical-menu.menu-expanded .navbar .navbar-container {
   color: var(--pending) !important;
 }
 
+.main-menu.menu-light .navigation>li>a>svg {
+  fill: #ffffff;
+}
+
+
+.main-menu.menu-light .navigation>li.hover>a>svg,
+.main-menu.menu-light .navigation>li:hover>a>svg,
+.main-menu.menu-light .navigation>li.active>a>svg {
+  fill: var(--pending) !important;
+}
+
 .main-menu.menu-light .navigation>li.active>a {
   font-weight: 100;
   margin: 0;
@@ -861,7 +872,7 @@ select.form-control[readonly] {
 }
 
 .user-info-wrapper .badge-rounded {
-  width: 65px;
+  /* width: 65px; */
   justify-content: center;
 }
 
@@ -903,12 +914,10 @@ select.form-control[readonly] {
 }
 
 
+.search-section .form-control-position{
+  top: -4px;
+}
 /* radio pills ends css */
-
-
-
-
-
 
 /* Media query */
 
@@ -932,3 +941,4 @@ select.form-control[readonly] {
 @media screen and (max-width: 320px) {}
 
 /* Media query ENDS*/
+
