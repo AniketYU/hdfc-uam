@@ -303,6 +303,10 @@ form .form-control::placeholder {
   box-shadow: none;
 }
 
+.nav-tabs.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .nav-tabs .nav-link::before {
   background: var(--pending);
   left: 25%;
@@ -331,7 +335,7 @@ form .form-control::placeholder {
 }
 
 .nav.nav-tabs .nav-item .nav-link.active {
-  color: #000000;
+  color: var(--font-color-black);
   font-weight: 600;
   opacity: 1;
 }
@@ -466,7 +470,7 @@ form .form-control::placeholder {
   /* display: none; */
   /* visibility: hidden; */
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--font-color-black);
 }
 
 .search_icon {
@@ -589,7 +593,7 @@ table.dataTable.no-footer {
 table.dataTable tbody th,
 table.dataTable tbody td {
   border: none;
-  padding: 0px 10px;
+  padding: 0px 18px;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -650,12 +654,18 @@ table.dataTable tbody td {
   background-color: var(--rejected);
 }
 
+.badge-dark {
+  background-color: #777777;
+}
+
 .custom-badge {
   border-radius: 50px;
   padding: 0.2rem 1rem;
+  justify-content: center;
+  width: 60px;
 }
 
-.vertical-tab-panel table thead {
+.dataTables_wrapper table thead {
   background-color: #e4e4e4;
 }
 
@@ -705,6 +715,13 @@ table.dataTable tbody td {
   transform: translateX(0);
 }
 
+.success-modal .modal-body {
+  background-image: url('../../assets/images/modal-bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 5rem 3rem !important;
+}
+
 /* modal right css ends */
 
 /* selectivity */
@@ -722,7 +739,7 @@ input[type="text"].selectivity-multiple-input {
   /* border: 1px solid #babfc7; */
   width: 100%;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--font-color-black);
 }
 
 .selectivity-multiple-input-container {
@@ -781,5 +798,137 @@ select.form-control[readonly] {
   border-style: solid;
   background-color: #eee;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--font-color-black);
 }
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-primary h5 {
+  color: #ffffff !important;
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+}
+
+.bg-green h5 {
+  color: #ffffff !important;
+}
+
+.modal-footer button {
+  font-size: 14px;
+}
+
+.modal-footer i {
+  font-size: 15px;
+}
+
+.input-icon {
+  bottom: 17%;
+  right: 1.1rem;
+}
+
+.password-recovery-policy-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #d5e3fd;
+  border: 1px solid #c5c5c5;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.password-recovery-policy-wrapper p {
+  color: var(--font-color-black);
+}
+
+.text-black {
+  color: var(--font-color-black) !important;
+}
+
+.toastr-modal-wrapper i {
+  font-size: 28px;
+  color: var(--green);
+}
+
+.toastr-modal-wrapper h5 {
+  font-weight: 600;
+}
+
+.securityPoliciesTable .dataTables_filter {
+  margin-bottom: 1rem;
+}
+
+.user-info-wrapper .badge-rounded {
+  width: 65px;
+  justify-content: center;
+}
+
+/* radio pills css */
+
+.radio-pills input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.radio-pills label {
+  color: lighten(var(--primary), 40%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 45px;
+  margin-right: -4px;
+}
+
+.radio-pills input[type="radio"]:checked+label {
+  color: #fff;
+  background: var(--primary);
+}
+
+.radio-pills label+input[type="radio"]+label {
+  border-left: solid 1px #c5c5c5;
+}
+
+.radio-pills .radio-group {
+  border: 1px solid #c5c5c5;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.min-ht {
+  min-height: 76vh;
+}
+
+
+/* radio pills ends css */
+
+
+
+
+
+
+/* Media query */
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1024px) {
+  .nav-tabs .nav-link h4{
+    font-size: 14px;
+  }
+  .radio-pills label {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 425px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {}
+
+/* Media query ENDS*/

@@ -301,21 +301,62 @@
                     <a href="index.html"><i class="fa fa-users"></i><span class="menu-title"
                             data-i18n="User">User</span>
                     </a>
+                    <!-- <ul class="menu-content">
+                        <li><a class="menu-item" href="dashboard-ecommerce.html"><i class="material-icons"></i><span
+                                    data-i18n="eCommerce">eCommerce</span></a>
+                        </li>
+                        <li class="active"><a class="menu-item" href="dashboard-crypto.html"><i
+                                    class="material-icons"></i><span data-i18n="Crypto">Crypto</span></a>
+                        </li>
+                        <li><a class="menu-item" href="dashboard-sales.html"><i class="material-icons"></i><span
+                                    data-i18n="Sales">Sales</span></a>
+                        </li>
+                    </ul> -->
                 </li>
-                <li class="nav-item">
-                    <a href="users.html"><i class="fa fa-users"></i><span class="menu-title"
-                            data-i18n="User">User</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="profile.html"><i class="fa fa-users"></i><span class="menu-title"
-                            data-i18n="User">User</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="security-policies.html"><i class="fa fa-users"></i><span class="menu-title"
-                            data-i18n="User">User</span>
-                    </a>
+                <li class=" nav-item"><a href="#"><i class="material-icons">tv</i><span class="menu-title"
+                            data-i18n="Templates">Templates</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="#"><i class="material-icons"></i><span
+                                    data-i18n="Vertical">Vertical</span></a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="../material-vertical-menu-template"><i
+                                            class="material-icons"></i><span data-i18n="Classic Menu">Classic
+                                            Menu</span></a>
+                                </li>
+                                <li><a class="menu-item" href="../material-vertical-compact-menu-template"><i
+                                            class="material-icons"></i><span data-i18n="Compact Menu">Compact
+                                            Menu</span></a>
+                                </li>
+                                <li><a class="menu-item" href="../material-vertical-collapsed-menu-template"><i
+                                            class="material-icons"></i><span data-i18n="Collapsed Menu">Collapsed
+                                            Menu</span></a>
+                                </li>
+                                <li><a class="menu-item" href="../material-vertical-modern-menu-template"><i
+                                            class="material-icons"></i><span>Modern Menu</span></a>
+                                </li>
+                                <li><a class="menu-item" href="../material-vertical-content-menu-template"><i
+                                            class="material-icons"></i><span data-i18n="Content Menu">Content
+                                            Menu</span></a>
+                                </li>
+                                <li><a class="menu-item" href="../material-vertical-overlay-menu-template"><i
+                                            class="material-icons"></i><span data-i18n="Overlay Menu">Overlay
+                                            Menu</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="menu-item" href="#"><i class="material-icons"></i><span
+                                    data-i18n="Horizontal">Horizontal</span></a>
+                            <ul class="menu-content">
+                                <li><a class="menu-item" href="../material-horizontal-menu-template"><i
+                                            class="material-icons"></i><span data-i18n="Classic">Classic</span></a>
+                                </li>
+                                <li><a class="menu-item" href="../material-horizontal-menu-template-nav"><i
+                                            class="material-icons"></i><span data-i18n="Full Width">Full
+                                            Width</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -326,7 +367,7 @@
     <div class="app-content content">
         <div class="content-header row">
             <div class="col">
-                <h4 class="pl-1">Dashboard </h4>
+                <h4 class="pl-1">Role > <strong><span id="editRoleName"></span>Admin</strong></h4>
             </div>
         </div>
         <div class="content-overlay"></div>
@@ -335,28 +376,25 @@
                 <div class="edit_page_wrapper">
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-sm-12">
-                            <div class="card min-ht" style="border-radius: 0;">
+                            <div class="card" style="border-radius: 0;">
                                 <div class="card-content collapse show">
                                     <div class="card-body card-dashboard p-2 position-relative">
                                         <div class="user-info-wrapper">
+                                            <div class="badge badge-primary rounded-0">
+                                                <span>
+                                                    ROLE
+                                                </span>
+                                            </div>
                                             <div class="d-flex justify-content-between align-items-center mt-1"
                                                 id="userNameEditDiv">
                                                 <div>
                                                     <h4 class="mb-0" id="userNameSpan">
-                                                        Soham
+                                                        Maker
                                                     </h4>
-                                                    <input type="text" class="form-control d-none" id="editUserIp"
-                                                        name="editUserIp" value="Soham" />
                                                 </div>
 
-                                                <a href="javascript:;" class="edit-icon d-none"
-                                                    onclick="showEditInput('#editUserIp','#userNameSpan','.editImg1')">
-                                                    <img class="editImg1" src="./app-assets/images/svg/pencil.svg"
-                                                        alt="Edit User Name" />
-                                                </a>
-
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center mt-1"
+                                            <!-- <div class="d-flex justify-content-between align-items-center mt-1"
                                                 id="userEmailEditDiv">
                                                 <div>
                                                     <h6 class="mb-0" id="userEmailSpan">
@@ -371,7 +409,7 @@
                                                     <img class="editImg2" src="./app-assets/images/svg/pencil.svg"
                                                         alt="Edit User Name" />
                                                 </a>
-                                            </div>
+                                            </div> -->
                                             <div class="statusbadgeDiv mt-1">
                                                 <span class="badge badge-pills badge-approved badge-rounded">
                                                     Active
@@ -397,17 +435,9 @@
                                                     href="#v-pills-home" role="tab" aria-controls="v-pills-home"
                                                     aria-selected="true">
                                                     <h5 class="mb-0">
-                                                        All 
-                                                    </h5>
+                                                        Roles and Privileges
+                                                        </h4>
                                                 </a>
-                                                <a class="nav-link pl-2" id="v-pills-profile-tab" data-toggle="pill"
-                                                    href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                                    aria-selected="false">
-                                                    <h5 class="mb-0">
-                                                        Finance
-                                                    </h5>
-                                                </a>
-
                                             </div>
                                         </div>
                                     </div>
@@ -415,228 +445,195 @@
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8 col-sm-12 vertical-tab-panel">
-                            <div class="card min-ht" style="border-radius: 0;">
+                            <div class="card" style="border-radius: 0;">
+                                <div class="card-content collapse show">
+                                    <div class="card-body card-dashboard p-0 pt-2 position-relative">
+                                        <div class="d-flex justify-content-end pr-3">
+                                            <button type="button" class="btn btn-dark ml-1"> Cancel</button>
+                                            <button type="button" id="submitBtn" class="btn btn-primary ml-1"> Submit </button>
+                                        </div>
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                                aria-labelledby="v-pills-home-tab">
+                                                <form class="row px-2 pt-0" id="editUserForm">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <h3 class="font-weight-bold">Creation</h3>
+                                                        <fieldset class="form-group pr-1">
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchUserPermissions">User</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchUserPermissions" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectUserPermissions"
+                                                                        class="single-select-box selectivity-input switchUserPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectUserPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchAppAssignPermissions">
+                                                                        Application Assignment</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchAppAssignPermissions" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectAppPermissions"
+                                                                        class="single-select-box selectivity-input switchAppAssignPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectAppPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchRolePermissions">Role
+                                                                        Access</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchRolePermissions" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectRolePermissions"
+                                                                        class="single-select-box selectivity-input switchRolePermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectRolePermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 0;">
                                 <div class="card-content collapse show">
                                     <div class="card-body card-dashboard p-0 pt-2 position-relative">
                                         <div class="tab-content" id="v-pills-tabContent">
                                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                                 aria-labelledby="v-pills-home-tab">
-                                                <form class="row p-2" id="editUserForm">
-                                                    <div class="col-lg-6 col-md-6">
+                                                <form class="row px-2 pt-0" id="editUserForm">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <h3 class="font-weight-bold">Approvals</h3>
                                                         <fieldset class="form-group pr-1">
-                                                            <label for="userProfile">User Profile</label>
-                                                            <select id="userProfile" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select User Profile"
-                                                                name="userProfile">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="userRole">User Role</label>
-                                                            <select id="userRole" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select User Role" name="userRole">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsUserPermissions">User</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsUserPermissions"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsUserPermissions"
+                                                                        class="single-select-box selectivity-input switchApprovalsUserPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsUserPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="userName">User Name</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Enter User Name" name="userName"
-                                                                id="userName" disabled />
-                                                        </fieldset>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="employeeCode">Employee/User Code</label>
-                                                            <select id="employeeCode" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select Employee/User Code"
-                                                                name="employeeCode">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="branchCode">Branch Code</label>
-                                                            <select id="branchCode" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select Branch Code" name="branchCode">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsAppAssignPermissions">
+                                                                        Application Assignment</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsAppAssignPermissions"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsAppPermissions"
+                                                                        class="single-select-box selectivity-input switchApprovalsAppAssignPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsAppPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="branchName">Branch Name</label>
-                                                            <input type="text" class="form-control" id="branchName"
-                                                                name="branchName" disabled
-                                                                placeholder="Enter Branch Name" disabled />
-                                                        </fieldset>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="departmentCode">Department Code</label>
-                                                            <select id="departmentCode" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select Department Code"
-                                                                name="departmentCode">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="departmentName">Department Name</label>
-                                                            <input type="text" class="form-control"
-                                                                name="departmentName" id="departmentName"
-                                                                placeholder="Enter Department Name" disabled />
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="companyCode">Company Code</label>
-                                                            <!-- <input type="text" class="form-control" id="first_name"> -->
-                                                            <select id="companyCode" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select Company Code"
-                                                                name="companyCode">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="companyName">Company Name</label>
-                                                            <input id="companyName" type="text" class="form-control"
-                                                                placeholder="Enter Company Name" id="companyName"
-                                                                disabled />
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="userEmail">Email Address</label>
-                                                            <input type="text" class="form-control" name="userEmail"
-                                                                placeholder="Enter Email Address" id="userEmail"
-                                                                disabled />
-                                                        </fieldset>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="mobileNumber">Mobile Number</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Enter Mobile Number" name="mobileNumber"
-                                                                id="mobileNumber" disabled />
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="supervisorCode">Supervisor Code</label>
-                                                            <select id="supervisorCode" disabled
-                                                                class="single-select-box selectivity-input"
-                                                                data-placeholder="Select Company Code"
-                                                                name="supervisorCode">
-                                                                <option>Option 1</option>
-                                                                <option>Option 2</option>
-                                                                <option>Option 3</option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="expiryDate">Expiry Date</label>
-                                                            <input type="date" class="form-control"
-                                                                placeholder="Select Expiry Date" name="expiryDate"
-                                                                id="expiryDate" disabled />
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <fieldset class="form-group pr-1">
-                                                            <label for="userAddress">Address</label>
-                                                            <textarea type="text" class="form-control"
-                                                                name="userAddress" id="userAddress"
-                                                                placeholder="Enter Address" rows="1"
-                                                                disabled></textarea>
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsRolePermissions">Role Access
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsRolePermissions"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsRolePermissions"
+                                                                        class="single-select-box selectivity-input switchApprovalsRolePermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsRolePermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </fieldset>
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                                aria-labelledby="v-pills-profile-tab">
-
-                                                <table id="appsTable"
-                                                    class="table table-striped table-bordered apps-table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Actions</th>
-                                                            <th>Apps</th>
-                                                            <th>Status</th>
-                                                            <th>Application Role</th>
-                                                            <th>Application Profile</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="action_div">
-                                                                    <a href="javascript:;" class="editAction">
-                                                                        <img class="ml-1" alt="img"
-                                                                            src="./app-assets/images/svg/pencil.svg" />
-                                                                    </a>
-
-                                                                    <a href="javascript:;" class="editAction">
-                                                                        <img class="ml-1" alt="img"
-                                                                            src="./app-assets/images/svg/minus-circle-svgrepo-com.svg" />
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                Zoho Projects
-                                                            </td>
-                                                            <td>
-                                                                <span class="text-pending">
-                                                                    Pending
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                Manager
-                                                            </td>
-                                                            <td>
-                                                                Manager
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-
-                                                </table>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -648,6 +645,7 @@
         </div>
     </div>
     <!-- END: Content-->
+    
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
@@ -663,6 +661,25 @@
         </p>
     </footer>
     <!-- END: Footer-->
+
+    <div class="modal fade success-modal" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <div ></div> -->
+                    <!-- <img src="./assets/images/modal-bg.png"/> -->
+                    <div class="d-flex align-items-center toastr-modal-wrapper">
+                        <i class="ft ft-check-circle pr-2"></i>
+                        <h5 class="modal-title text-black mb-0" id="successModalTitle">
+                            Success
+                        </h5>
+                    </div>
+                    <p class="text-black pl-4" id="successModalText">Request send for approval</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- BEGIN: Vendor JS-->
@@ -680,48 +697,31 @@
 
     <script>
         $(document).ready(function () {
-
-            var url = new URL(window.location.href);
-            var params = new URLSearchParams(url.search);
-            var editMode = (params.get('editPage') ? true : false);
-
-            if (editMode) {
-                $(".edit-icon").removeClass('d-none');
-                $("#editUserForm .form-control,#editUserForm .selectivity-input").attr('disabled', false);
-                // $('.selectivity-input').select2({
-                //     allowClear: true
-                // });
-            }
-
-            $('.selectivity-input').select2({
-                allowClear: true
+            $('.selectivity-input').val(null).select2({
+                allowClear: true,
+                multiple: true,
             });
 
-            var appsTable = $("#appsTable").DataTable({
-                dom: "",
-                // initComplete:function(){
-                //     if(editMode){
-                //         appsTable.column(0).visible(false);
-                //     }
-                // }
+            $('.selectivity-input').on("change", function () {
+                let selectedValues = $(this).val();
+                let resultString = selectedValues.join(", ");
+                $(this).next().find('.select2-selection__rendered').html(resultString);
             });
 
-            // appsTable.columns(0).visible(false, false);
-            // appsTable.columns.adjust().draw(true);
+            $(".permissions-switch").click(function () {
+                if ($(this).is(":checked")) {
+                    $("." + $(this).attr('id')).attr('disabled', false);
+                } else {
+                    $("." + $(this).attr('id')).attr('disabled', true);
+                }
+            });
 
+            $("#submitBtn").click(function(){
+                $("#successModal").modal('show');
+            });
         });
 
-        function showEditInput(showId, hideId, iconImg) {
-            if ($(showId).hasClass('d-none')) {
-                $(showId).removeClass('d-none');
-                $(hideId).addClass('d-none');
-                $(iconImg).attr('src', './app-assets/images/svg/check-circle-svgrepo-com.svg');
-            } else {
-                $(hideId).removeClass('d-none');
-                $(showId).addClass('d-none');
-                $(iconImg).attr('src', './app-assets/images/svg/pencil.svg');
-            }
-        }
+
     </script>
 
 </body>
