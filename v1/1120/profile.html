@@ -477,7 +477,8 @@
                                                         <label class="switch-custom ml-1"><input type="checkbox"
                                                                 id="switch-' + index + '" checked><span
                                                                 class="slider round"></span></label>
-                                                        <a href="permissions.html" class="editAction">
+                                                        <a href="permissions.html
+                                                        " class="editAction">
                                                             <img class="ml-1" alt="img"
                                                                 src="./app-assets/images/svg/pencil.svg" />
                                                         </a>
@@ -771,33 +772,9 @@
                 $("#" + tableId + " tbody").html(tBodyData);
             } */
             dataTableinit = $('.init-dataTables').DataTable({
-                "dom": 'Bf<"toolbar2"><"table-responsive"tip>',
+                "dom": 'f<"table-responsive"tip>',
                 scrollX: true,
                 "autoWidth": false,
-                buttons: [
-                    {
-                        extend: 'pageLength',
-                        text: '<i class="la la-list-alt" title="Toggle Page Length"></i>',
-                        // text:'<img class="list_img" src="./app-assets/images/svg/list.png">',
-                        className: 'excel_button datatable_btn',
-                        titleAttr: 'Toggle Page Length'
-                    },
-                    {
-                        extend: 'excelHtml5',
-                        text: '',
-                        className: 'exportExcelBtn d-none',
-                        titleAttr: 'Export Data in CSV',
-                        autoFilter: true,
-                        sheetName: 'Exported data'
-                    },
-                    // {
-                    //     extend: 'colvis',
-                    //     // text: '<i class="ft-eye" title="Hide/Unhide Columns"></i>',
-                    //     text: '<img class="eye_img" src="./app-assets/images/svg/eye.svg">',
-                    //     titleAttr: 'Hide/Unhide Columns',
-                    //     className: 'excel_button datatable_btn'
-                    // },
-                ],
                 language: {
                     searchPlaceholder: "Search records",
                     search: '<i class="ft-search search_icon"></i>',
@@ -828,9 +805,9 @@
                 }
             });
 
-            $("div.toolbar2").html(
+            /* $("div.toolbar2").html(
                 '<div class="right_toolbar"><button class="btn rounded-circle create_update_btn"><i class="la la-cloud-download toolbar_elements filter_export_button"></i></button><div class="vl"></div><button class="btn btn-primary create_update_btn toolbar_elements rounded-circle" data-toggle="modal" data-target="#addUserModal"><i class="la la-plus" data-toggle="tooltip" title="Add User"></i></button></div>'
-            );
+            ); */
         }
 
 

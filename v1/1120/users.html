@@ -57,6 +57,9 @@
 
     <!-- toggle switch -->
 
+    <!-- Dropzone js -->
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <!-- Dropzone js Ends-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -870,9 +873,217 @@
             </div>
         </div> <!-- modal-bialog .// -->
     </div> <!-- modal.// -->
-
-
     <!-- right side modal -->
+
+
+    <!-- upload modal -->
+    <div class="modal fixed-left fade upload-modal" id="uploadModal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-3 pb-0 mb-1">
+                    <h3>Import Data</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="radio">
+                                <div class="row ">
+                                    <div class="col-12 d-flex justify-content-between align-items-center">
+                                        <h4 class="mr-1">Select File Type</h4>
+                                        <button
+                                            class="btn btn-float btn-primary waves-effect waves-light d-flex justify-content-center align-items-center mr-1">
+                                            <i class="ft-download"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row jcontent justify-content-center mb-2">
+                                    <div class="radio_box-style">
+                                        <input type="radio" name="filetype" id="upload_excel">
+                                        <label for="upload_excel">
+                                            <span></span>
+                                            <i class='ft-file font-size-46'></i><br>
+                                            <span>XLS/XLSX</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio_box-style">
+                                        <input type="radio" name="filetype" id="upload_csv">
+                                        <label for="upload_csv">
+                                            <span></span>
+                                            <i class='ft-file font-size-46'></i><br>
+                                            <span>CSV</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <form action="/target" class="dropzone" id="my-great-dropzone"></form>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pr-4">
+                    <button type="button" class="btn btn-primary round btn-min-width" id="importfile"
+                        data-dismiss="modal" data-toggle="modal" data-target="#upload_modal_2">Import</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-dark round btn-min-width">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- upload modal -->
+
+    <!-- modal for upload file 2-->
+    <div id="upload_modal_2" class="modal fixed-left fade" role="dialog">
+        <div class="modal-dialog modal-dialog-aside modal-lg">
+            <div class="modal-content">
+                <div class="modal-header pl-3 pb-0 mb-1">
+                    <h4 class="modal-title">Map Fields</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <table id="column_mapping_table" class="table p">
+                                <thead>
+                                    <tr>
+                                        <th class="c1 bg border-0">LIST OF FIELDS IN TABLE</th>
+                                        <th class="c2 bg border-0">COLUMNS IN FILE</th>
+                                        <th class="c2 bg border-0"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="tc">Table Header1</td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header1">
+                                                    <option value="10"> Header 1</option>
+                                                    <option value="25"> Header 2</option>
+                                                    <option value="50">Header 3</option>
+                                                    <option value="100"> Header 4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Table Date Header2</td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header2">
+                                                    <option value="10"> Header 1</option>
+                                                    <option value="25"> Header 2</option>
+                                                    <option value="50"> Header 3</option>
+                                                    <option value="100"> Header 4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header2_date_format">
+                                                    <option value="10">dd.MM.yyyy</option>
+                                                    <option value="25">dd/MM/yyyy</option>
+                                                    <option value="50">MM.dd.yyyy</option>
+                                                    <option value="100">yyyy-MM-dd</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Date Header3</td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header3">
+                                                    <option value="10"> Header 1</option>
+                                                    <option value="25">Header 2</option>
+                                                    <option value="50">Header 3</option>
+                                                    <option value="100">Header 4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header3_date_format">
+                                                    <option value="10">dd.MM.yyyy</option>
+                                                    <option value="25">dd/MM/yyyy</option>
+                                                    <option value="50">MM.dd.yyyy</option>
+                                                    <option value="100">yyyy-MM-dd</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Header4</td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header4">
+                                                    <option value="10"> Header 1</option>
+                                                    <option value="25"> Header 2</option>
+                                                    <option value="50"> Header 3</option>
+                                                    <option value="100">Header 4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Header5</td>
+                                        <td>
+                                            <div>
+
+                                                <select class="form-control" id="table_header5">
+                                                    <option value="10"> Header 1</option>
+                                                    <option value="25"> Header 2</option>
+                                                    <option value="50"> Header 3</option>
+                                                    <option value="100">Header 4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Header6</td>
+                                        <td>
+                                            <div>
+                                                <select class="form-control" id="table_header6">
+                                                    <option value="10"> Header 1</option>
+                                                    <option value="25"> Header 2</option>
+                                                    <option value="50">Header 3</option>
+                                                    <option value="100">Header 4</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-end pr-4">
+                    <button type="button" class="btn btn-dark waves-effect waves-light" data-dismiss="modal"><i
+                            class="ft ft-x"></i>
+                        Cancel</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light"><i class="ft ft-plus"></i>
+                        Add
+                        Continue</button>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-white waves-effect waves-light"
+                        id="continuebtn">Continue</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-dark text-white waves-effect waves-light"
+                        id="cancelbtn">Back</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- modal for upload file 2 ENds-->
 
     <!-- Reset Modal -->
     <!-- Modal -->
@@ -947,8 +1158,8 @@
     <!-- Reset Modal Ends -->
 
 
-    <div class="modal fade success-modal" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalTitle"
-        aria-hidden="true">
+    <div class="modal fade success-modal" id="successModal" tabindex="-1" role="dialog"
+        aria-labelledby="successModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -1015,6 +1226,11 @@
     <script src="./app-assets/vendors/js/forms/toggle/bootstrap-checkbox.min.js"></script>
     <script src="./app-assets/js/scripts/forms/switch.js"></script>
     <!-- toggle swicth js -->
+
+    <!-- Dropzone js -->
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <!-- Dropzone js Ends -->
+
 
     <!-- Dummy Data for Tables ------------------ -->
     <script>
@@ -1937,9 +2153,11 @@
                 }
             });
 
-            $("div.toolbar2").html(
-                '<div class="right_toolbar"><button class="btn rounded-circle create_update_btn"><i class="la la-cloud-download toolbar_elements filter_export_button"></i></button><div class="vl"></div><button class="btn btn-primary create_update_btn toolbar_elements rounded-circle" data-toggle="modal" data-target="#addUserModal"><i class="la la-plus" data-toggle="tooltip" title="Add User"></i></button></div>'
-            );
+            if (tableId == "pendingTableSection") {
+                $("div.toolbar2").html(
+                    '<div class="right_toolbar"><button class="btn rounded-circle create_update_btn"><i class="la la-cloud-download toolbar_elements filter_export_button"></i></button><div class="vl"></div><button class="btn rounded-circle create_update_btn"><i class="la la-cloud-upload toolbar_elements filter_export_button" data-toggle="modal" data-target="#uploadModal"></i></button><div class="vl"></div><button class="btn btn-primary create_update_btn toolbar_elements rounded-circle" data-toggle="modal" data-target="#addUserModal"><i class="la la-plus" data-toggle="tooltip" title="Add User"></i></button></div>'
+                );
+            }
         }
 
 

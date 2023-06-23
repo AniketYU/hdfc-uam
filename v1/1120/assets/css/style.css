@@ -914,19 +914,214 @@ select.form-control[readonly] {
 }
 
 
-.search-section .form-control-position{
+.search-section .form-control-position {
   top: -4px;
 }
+
 /* radio pills ends css */
+
+
+/* upload modal css */
+
+.dropzone .dz-message {
+  /* dropzone size adjustment */
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-top: -30px;
+  color: #0a5881;
+  text-align: center;
+}
+
+.dropzone .dz-message:before {
+  /* dropzone size adjustment */
+  content: '\e864';
+  font-family: 'feather';
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  left: 50%;
+  margin-left: -40px;
+  line-height: 1;
+  z-index: 2;
+  color: #0a5881;
+  text-indent: 0;
+  font-weight: normal;
+}
+
+.bgbtn {
+  background-color: #00517cf5 !important;
+}
+
+.jcontent {
+  justify-content: center;
+}
+
+.radio_box-style label {
+  width: 100px;
+  float: left;
+  border: 1px solid #eee;
+  margin-right: 20px;
+  padding: 24px 5px 17px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: var(--fs13px);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.radio_box-style label:before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ccc;
+  float: left;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+}
+
+.radio_box-style label:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  float: left;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.radio_box-style input[type='radio']:checked+label {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.radio_box-style input[type='radio']:checked+label:after {
+  background: var(--primary);
+}
+
+.radio_box-style {
+  margin-left: 9px;
+}
+
+.hl {
+  margin-left: 9px;
+}
+
+.d6 {
+  margin-left: 15px;
+}
+
+.bt1 {
+
+  color: #FFF;
+
+  font-size: var(--fs13px);
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  padding: 7px 15px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.sb {
+  border: 1px solid;
+}
+
+.c1 {
+  width: 200px;
+
+}
+
+.c2 {
+  width: 400px;
+
+}
+
+.font-size-46 {
+  font-size: 46px;
+}
+
+#child {
+  position: sticky;
+  bottom: 70px;
+  left: 100px;
+}
+
+.bg {
+  background-color: #f4f5fa
+}
+
+.dropzone {
+  min-height: 150px;
+  border: 2px dashed rgb(10, 88, 129);
+  background: white;
+  padding: 20px 20px;
+}
+
+.dropzone,
+.dropzone * {
+  box-sizing: border-box;
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio_box-style label {
+  width: 100px;
+  float: left;
+  border: 1px solid #bcbccb;
+  margin-right: 20px;
+  padding: 24px 5px 17px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: var(--fs13px);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-width {
+  width: 150px !Important;
+}
+
+.upload-modal .btn-float{
+  width: 35px;
+  height: 35px;
+}
+
+.upload-modal .btn-float i{
+  font-size: 20px;
+}
+
+
+/* upload modal css */
 
 /* Media query */
 
 @media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 1024px) {
-  .nav-tabs .nav-link h4{
+  .nav-tabs .nav-link h4 {
     font-size: 14px;
   }
+
   .radio-pills label {
     padding: 10px 30px;
   }
@@ -941,4 +1136,3 @@ select.form-control[readonly] {
 @media screen and (max-width: 320px) {}
 
 /* Media query ENDS*/
-
