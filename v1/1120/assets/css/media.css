@@ -1,0 +1,27 @@
+@media only screen and (max-width:425px) {
+
+    .col-xs-0,
+    .col-sm-0,
+    .col-md-0,
+    .col-lg-0 {
+        flex: 0 0 0;
+        max-width: 0;
+    }
+
+    .auth_body .session {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .auth_body .session{
+        width: 70% !important;
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    .auth_body .session{
+        width: 50%;
+    }
+}

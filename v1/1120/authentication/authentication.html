@@ -1,0 +1,526 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords"
+        content="admin template, YashussUnlimited admin template, dashboard template, Modular template,Demographic Dashboard, responsive admin template, web app, website components, authentication module">
+    <meta name="author" content="YashussUnlimited">
+    <title>Authentication</title>
+    <!-- <link rel="apple-touch-icon"
+        href="../app-assets/images/ico/apple-icon-120.png"> -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="../app-assets/images/ico/favicon.ico">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/fonts/material-icons/material-icons.css">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/vendors/css/material-vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/material.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/material-extended.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/material-colors.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/core/menu/menu-types/material-vertical-menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="../app-assets/css/core/colors/palette-gradient.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="../assets/css/authentication.css">
+</head>
+
+<body>
+
+    <section class="auth_body">
+        <div class="session">
+            <div class="row">
+                <div class="col-sm-0 col-6 p-0">
+                    <div class="left">
+                        <img src="../assets/images/logo.png" />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                    <div class="card main-form-card">
+
+                        <!-- Normal Login Form -->
+                        <div id="login_div">
+                            <form action="" class="log-in" autocomplete="off" id="login_form">
+                                <h4>We are</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <div class="floating-label">
+                                    <input placeholder="Employee ID" type="text" name="normal_emp_id" id="normal_emp_id"
+                                        autocomplete="off" required>
+                                    <label for="normal_emp_id">Employee ID :</label>
+                                    <div class="icon">
+                                        <i class="ft-user"></i>
+                                    </div>
+                                </div>
+                                <div class="floating-label">
+                                    <input placeholder="Password" type="password" name="normal_password"
+                                        id="normal_password" autocomplete="off" required>
+                                    <label for="normal_password">Password:</label>
+                                    <div class="icon">
+                                        <i class="ft-lock"></i>
+                                    </div>
+
+                                </div>
+                                <button class="btn btn-primary round px-6 mt-2 w-50" id="login_button" type="submit"
+                                    onClick="return false;">Login</button>
+                                <a href="#" onClick="toggleForm('login_div','forgot_div'); return false;"
+                                    class="normal-link" id="forgot_password">
+                                    <br>
+                                    <h6>Forgot Password?</h6>
+                                </a>
+                            </form>
+                        </div>
+                        <!-- Normal Login Form Ends-->
+
+                        <!-- Normal MFA Div-->
+                        <div id="mfa_div">
+                            <form action="" class="log-in" autocomplete="off" id="mfa_form">
+                                <h4>MFA Verification</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>You've enabled multi-factor authentication (MFA) for your account. Complete MFA to
+                                    change
+                                    your account password.</h6>
+                                <div class="autenticator-option" onclick="toggleForm('mfa_div','otp_div');">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="icon">
+                                                <i class="mfa-icon la la-key"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <h5>Authenticator App</h5>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <p>Enter the OTP from Authenticator App</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="autenticator-option" onclick="toggleForm('mfa_div','otp_div');">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="icon">
+                                                <i class="mfa-icon ft-message-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <h5>SMS Verification</h5>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <p>A OTP will be sent to your mobile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Normal MFA Div Ends-->
+
+                        <!-- Normal OTP Div-->
+                        <div id="otp_div">
+                            <form action="" class="log-in" autocomplete="off" id="otp_form">
+                                <h4>MFA Verification</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Enter the OTP sent to <span>91-98******78</span></h6>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="otp"
+                                            class="otp-inputs inputs d-flex flex-row justify-content-center mt-2">
+                                            <input class="text-center form-control rounded" type="text" id="first"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="second"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="third"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="fourth"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="fifth"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="sixth"
+                                                maxlength="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary round px-6 mt-2 validate" type="submit" id="type-success"
+                                    onClick="return false;">Verify</button>
+                                <br>
+                                <h6 style="color: #014c8e;">Resend OTP in <span id="countdown">00:00</span></h6>
+                            </form>
+                        </div>
+                        <!-- Normal OTP Div Ends-->
+
+                        <!-- Forgot Password Form Div-->
+                        <div id="forgot_div">
+                            <form action="" class="log-in" autocomplete="off">
+                                <h4>Forgot Password</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Enter your registered Employee ID to change your account password.</h6>
+                                <div class="floating-label">
+                                    <input placeholder="Enter Employee ID" type="text" name="forgot_password_employeeid"
+                                        id="forgot_password_employeeid" autocomplete="off">
+                                    <label for="forgot_password_employeeid">Your Employee ID</label>
+                                    <div class="icon">
+                                        <i class="ft-mail"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary round px-4 mt-2" type="submit"
+                                    onClick="toggleForm('forgot_div','recaptcha_div'); return false;">Recover
+                                    Password</button>
+                            </form>
+                        </div>
+                        <!-- Forgot Password Form Div Ends-->
+
+                        <!-- Forgot Password reCaptcha Div-->
+                        <div id="recaptcha_div">
+                            <form action="" class="log-in" id="forget_password" autocomplete="off">
+                                <h4>We are</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <div class="floating-label">
+                                    <a class="icon rightIcon" href="#">Change</a>
+                                    <input placeholder="Employee ID" type="text" name="recaptcha_emp_id"
+                                        id="recaptcha_emp_id" autocomplete="off">
+                                    <label for="emp_id">Employee ID :</label>
+                                    <div class="icon">
+                                        <i class="ft-mail"></i>
+                                    </div>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="captcha-area">
+                                        <div class="captcha-img">
+                                            <!-- <img src="../assets/images/captcha-bg.png" alt="Captch Background"> -->
+                                            <span class="captcha"></span>
+                                        </div>
+                                        <button class="reload-btn"><i class="ft ft-refresh-cw"></i></button>
+                                    </div>
+                                    <div action="#" class="input-area">
+                                        <input class="checkCaptcha" type="text" placeholder="Enter captcha"
+                                            maxlength="6" spellcheck="false" required>
+                                    </div>
+                                </div>
+
+                                <div class="status-text"></div>
+                                <button class="btn btn-primary round px-6 check-btn" type="submit">Next</button>
+                                <div class="d-flex justify-content-between w-100 border-top mt-2">
+                                    <a href="#!" class="normal-link">
+                                        <h6>Login</h6>
+                                    </a>
+
+                                    <a href="#!" class="normal-link">
+                                        <h6>Forgot Password?</h6>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Forgot Password reCaptcha Div Ends-->
+
+                        <!-- Forgot Password Send OTP Div-->
+                        <div id="otp_send_div">
+                            <form action="" class="log-in" autocomplete="off">
+                                <h4>Forgot Password</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>A one-time password (OTP) will be sent to your registered email address for
+                                    verification.</h6>
+                                <div class="floating-label">
+                                    <input placeholder="Enter Employee ID" type="text" name="send_otp_employeeid"
+                                        id="send_otp_employeeid" disabled value="user@hdfcbank.com" autocomplete="off">
+                                    <label for="send_otp_employeeid">Your Employee ID</label>
+                                    <div class="icon">
+                                        <i class="ft-mail"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary round px-4 mt-2" type="submit"
+                                    onClick="toggleForm('otp_send_div','otp_forgot_div'); return false;">Send
+                                    OTP</button>
+                            </form>
+                        </div>
+                        <!-- Forgot Password Send OTP Div Ends-->
+
+                        <!-- Forgot Password Enter OTP Div 2-->
+                        <div id="otp_forgot_div">
+                            <form action="" class="log-in" autocomplete="off" id="otp_form">
+                                <h4>MFA Verification</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Enter the OTP sent to <span>91-98******78</span></h6>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="otp"
+                                            class="otp-inputs inputs d-flex flex-row justify-content-center mt-2">
+                                            <input class="text-center form-control rounded" type="text" id="first"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="second"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="third"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="fourth"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="fifth"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="sixth"
+                                                maxlength="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary round px-6 mt-2 validate" type="submit"
+                                    onClick="toggleForm('otp_forgot_div','mfa_forgot_div'); return false;">Verify</button>
+                                <br>
+                                <h6 style="color: #014c8e;">Resend OTP in <span id="countdown">00:00</span></h6>
+                            </form>
+                        </div>
+                        <!-- Forgot Password Enter OTP Div 2 Ends-->
+
+                        <!-- Forgot Password MFA Div-->
+                        <div id="mfa_forgot_div">
+                            <form action="" class="log-in" autocomplete="off" id="mfa_form">
+                                <h4>MFA Verification</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>You've enabled multi-factor authentication (MFA) for your account. Complete MFA to
+                                    change
+                                    your account password.</h6>
+                                <div class="autenticator-option"
+                                    onclick="toggleForm('mfa_forgot_div','otp_forgot_after_div');">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="icon">
+                                                <i class="mfa-icon la la-key"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <h5>Authenticator App</h5>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <p>Enter the OTP from Authenticator App</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="autenticator-option"
+                                    onclick="toggleForm('mfa_forgot_div','otp_forgot_after_div');">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="icon">
+                                                <i class="mfa-icon ft-message-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <h5>SMS Verification</h5>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <p>A OTP will be sent to your mobile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Forgot Password MFA Div Ends-->
+
+                        <!-- Forgot Password OTP Div after-->
+                        <div id="otp_forgot_after_div">
+                            <form action="" class="log-in" autocomplete="off" id="otp_form">
+                                <h4>MFA Verification</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Enter the OTP sent to <span>91-98******78</span></h6>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="otp"
+                                            class="otp-inputs inputs d-flex flex-row justify-content-center mt-2">
+                                            <input class="text-center form-control rounded" type="text" id="first"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="second"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="third"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="fourth"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="fifth"
+                                                maxlength="1" />
+                                            <input class="text-center form-control rounded" type="text" id="sixth"
+                                                maxlength="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary round px-6 mt-2 validate" type="submit"
+                                    onClick="toggleForm('otp_forgot_after_div','new_password_div'); return false;">Verify</button>
+                                <br>
+                                <h6 style="color: #014c8e;">Resend OTP in <span id="countdown">00:00</span></h6>
+                            </form>
+                        </div>
+                        <!-- Forgot Password OTP Div after Ends-->
+
+                        <!-- Forgot Password Reset New Password Div-->
+                        <div id="new_password_div">
+                            <form action="" class="log-in" autocomplete="off">
+                                <h4>Set New Password</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Enter a unique and strong password that is easy to remember so that you won't forget
+                                    it
+                                    the next time.</h6>
+                                <div class="floating-label">
+                                    <input placeholder="Enter New Password" type="password" name="reset_new_password"
+                                        id="reset_new_password" autocomplete="off">
+                                    <label for="reset_new_password">Enter New Password</label>
+                                    <div class="icon">
+                                        <i class="ft-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="floating-label">
+                                    <input placeholder="Confirm New Password" type="password"
+                                        name="reset_confirm_password" id="reset_confirm_password" autocomplete="off">
+                                    <label for="reset_confirm_password">Confirm New Password</label>
+                                    <div class="icon">
+                                        <i class="ft-lock"></i>
+                                    </div>
+
+                                </div>
+                                <button class="btn btn-primary round px-3 mt-2" type="submit"
+                                    onClick="toggleForm('new_password_div','terminate_session_div'); return false;">Change
+                                    Password</button>
+                            </form>
+                        </div>
+                        <!-- Forgot Password Reset New Password Div-->
+
+                        <!-- Forgot Password Terminate session -->
+                        <div id="terminate_session_div">
+                            <form action="" class="log-in" autocomplete="off">
+                                <h4>Terminate Session</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Apart from changing your password, you can also choose any of the following options,
+                                    if
+                                    you feel your account is compromised</h6>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" name="customCheck"
+                                                id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Terminate all Browser
+                                                Session</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" name="customCheck"
+                                                id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Terminate all Web and
+                                                App
+                                                Session</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" name="customCheck"
+                                                id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Terminate all API
+                                                Tokens</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary round px-6 mt-2" type="submit"
+                                    onClick="toggleForm('terminate_session_div','login_div'); return false;">Continue</button>
+                            </form>
+                        </div>
+                        <!-- Forgot Password Terminate session -->
+
+                        <!-- First Time Login Set New Password login Div-->
+                        <div id="new_password_firstTime_div">
+                            <form action="" class="log-in" autocomplete="off">
+                                <h4>Set New Password</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <h6>Enter a unique and strong password that is easy to remember so that you won't forget
+                                    it
+                                    the next time.</h6>
+                                <div class="floating-label">
+                                    <input placeholder="Enter New Password" type="password"
+                                        name="firsttime_reset_new_password" id="firsttime_reset_new_password"
+                                        autocomplete="off">
+                                    <label for="firsttime_reset_new_password">Enter New Password</label>
+                                    <div class="icon">
+                                        <i class="ft-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="floating-label">
+                                    <input placeholder="Confirm New Password" type="password"
+                                        name="firsttime_reset_confirm_password" id="firsttime_reset_confirm_password"
+                                        autocomplete="off">
+                                    <label for="firsttime_reset_confirm_password">Confirm New Password</label>
+                                    <div class="icon">
+                                        <i class="ft-lock"></i>
+                                    </div>
+
+                                </div>
+                                <button class="btn btn-primary round px-3 mt-2" type="submit"
+                                    onClick="toggleForm('new_password_firstTime_div','login_after_newPassword_div'); return false;">Change
+                                    Password</button>
+                            </form>
+                        </div>
+                        <!-- First Time Login Set New Password login Div-->
+
+                        <!-- First Time Login Form Div-->
+                        <div id="login_after_newPassword_div">
+                            <form action="" class="log-in" autocomplete="off" id="login_form">
+                                <h4>We are</h4>
+                                <img src="../assets/images/logo.png" class="logo_class" />
+                                <div class="floating-label">
+                                    <input placeholder="Employee ID" type="text" name="emp_id_login_after_newPassword"
+                                        id="emp_id_login_after_newPassword" autocomplete="off" required>
+                                    <label for="emp_id_login_after_newPassword">Employee ID :</label>
+                                    <div class="icon">
+                                        <i class="ft-user"></i>
+                                    </div>
+                                </div>
+                                <div class="floating-label">
+                                    <input placeholder="Password" type="password" name="login_after_password"
+                                        id="login_after_password" autocomplete="off" required>
+                                    <label for="login_after_password">Password:</label>
+                                    <div class="icon">
+                                        <i class="ft-lock"></i>
+                                    </div>
+
+                                </div>
+                                <button class="btn btn-primary round px-6 mt-2" id="" type="submit"
+                                    onClick="toggleForm('login_after_newPassword_div', 'mfa_div'); return false;">Log
+                                    in</button>
+                                <a href="#" onClick="toggleForm('login_after_newPassword_div','mfa_div'); return false;"
+                                    class="normal-link" id="forgot_password">
+                                    <h6>Forgot Password?</h6>
+                                </a>
+                            </form>
+                        </div>
+                        <!-- First Time Login Form Div Ends-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../app-assets/vendors/js/material-vendors.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/Yu-ui-assets/ui-assets@main/app-assets/vendors/js/extensions/sweetalert2.all.min.js">
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/Yu-ui-assets/ui-assets@main/app-assets/vendors/js/extensions/polyfill.min.js">
+    </script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/otp.js"></script>
+    <script src="../assets/js/captcha.js"></script>
+
+</body>
+
+</html>

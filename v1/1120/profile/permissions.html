@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description"
+        content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords"
+        content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+    <title>Index</title>
+    <link rel="apple-touch-icon" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/material-icons/material-icons.css">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/material-vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/material.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/material-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/material-colors.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/material-vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/cryptocoins/cryptocoins.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" href="../app-assets/fonts/font_awesome.css">
+    <!-- END: Page CSS-->
+
+    <!-- datatable css -->
+
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <!-- datatable css ends -->
+
+
+    <!-- Selectivity css -->
+    <link href="../app-assets/css/forms/select2/select2.css" rel="stylesheet" />
+    <!-- Selectivity css -->
+
+    <!-- toggle switch -->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/bootstrap-switch.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/toggle/switchery.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/forms/switch.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-switch.css">
+
+    <!-- toggle switch -->
+
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+        .vertical-tab-panel {
+            overflow-y: auto;
+            max-height: 76vh;
+
+        }
+    </style>
+
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+
+
+<body
+    class="vertical-layout vertical-menu material-vertical-layout material-layout 2-columns fixed-navbar menu-collapsed"
+    data-open="click" data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top bg-white navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a
+                            class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                class="ft-menu font-large-1"></i></a>
+                    </li>
+
+                    <li class="nav-item d-none d-md-block mt-1 ml_1"><a class="nav-link nav-menu-main menu-toggle"
+                            href="#"><i class="ft-menu menu-btn"></i></a></li>
+                    <!-- <li class="nav-item"><a class="navbar-brand" href="index.html"><img class="brand-logo"
+                                alt="modern admin logo" src="../app-assets/images/logo/logo.png">
+
+                        </a></li> -->
+
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+                            data-target="#navbar-mobile"><i class="material-icons mt-50">more_vert</i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <!-- <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle" href="#"><i
+                                    class="ft-menu"></i></a></li> -->
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html"><img class="brand-logo" alt="modern admin logo"
+                                    src="../app-assets/images/logo/HDFC_Bank_Logo.svg">
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <div class="header-right-bg"></div>
+                        <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link"
+                                id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="ft-globe icon_size_20"></i><span
+                                    class="selected-language"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#"
+                                    data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a
+                                    class="dropdown-item" href="#" data-language="fr"><i
+                                        class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"
+                                    data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a><a
+                                    class="dropdown-item" href="#" data-language="de"><i
+                                        class="flag-icon flag-icon-de"></i> German</a></div>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
+                                data-toggle="dropdown"><i class="fa fa-comments icon_size_20"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6>
+                                    <span class="notification-tag badge badge-warning float-right m-0">4 New</span>
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span
+                                                    class="avatar avatar-sm avatar-online rounded-circle">
+                                                    <i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Margaret Govan</h6>
+                                                <p class="notification-text font-small-3 text-muted">I like your
+                                                    portfolio, let's start.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span
+                                                    class="avatar avatar-sm avatar-busy rounded-circle"></i></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Bret Lezama</h6>
+                                                <p class="notification-text font-small-3 text-muted">I have seen your
+                                                    work, there is</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Tuesday</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span
+                                                    class="avatar avatar-sm avatar-online rounded-circle"><i></i></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Carie Berra</h6>
+                                                <p class="notification-text font-small-3 text-muted">Can we have call in
+                                                    this week ?</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Friday</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left"><span
+                                                    class="avatar avatar-sm avatar-away rounded-circle"><i></i></span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Eric Alsobrook</h6>
+                                                <p class="notification-text font-small-3 text-muted">We have project
+                                                    party this saturday.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">last month</time></small>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center"
+                                        href="javascript:void(0)">Read all messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#"
+                                data-toggle="dropdown"><i class="fa fa-bell icon_size_20"></i><span
+                                    class="badge badge-pill badge-danger badge-up badge-glow">5</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span>
+                                    </h6><span class="notification-tag badge badge-danger float-right m-0">5 New</span>
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="material-icons icon-bg-circle bg-cyan mr-0">add_box</i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">You have new order!</h6>
+                                                <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor
+                                                    sit amet, consectetuer elit.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">30 minutes
+                                                        ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="material-icons icon-bg-circle bg-red bg-darken-1 mr-0">cloud_download</i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading red darken-1">99% Server load</h6>
+                                                <p class="notification-text font-small-3 text-muted">Aliquam tincidunt
+                                                    mauris eu risus.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Five hour
+                                                        ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="material-icons icon-bg-circle bg-yellow bg-darken-3 mr-0">warning</i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                                                <p class="notification-text font-small-3 text-muted">Vestibulum auctor
+                                                    dapibus neque.</p><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="material-icons icon-bg-circle bg-cyan mr-0">check_circle</i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Complete the task</h6><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i
+                                                    class="material-icons icon-bg-circle bg-teal mr-0">insert_drive_file</i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Generate monthly report</h6><small>
+                                                    <time class="media-meta text-muted"
+                                                        datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center"
+                                        href="javascript:void(0)">Read all notifications</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#"
+                                data-toggle="dropdown"><span class="mr-1 user-name">Ami Sheth</span><span
+                                    class="avatar avatar-online"><img
+                                        src="../app-assets/images/portrait/small/Ami-sheth.png"
+                                        alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item"
+                                    href="user-profile.html"><i class="material-icons">person_outline</i> Edit
+                                    Profile</a><a class="dropdown-item" href="app-kanban.html"><i
+                                        class="material-icons">playlist_add_check</i> Todo</a><a class="dropdown-item"
+                                    href="user-cards.html"><i class="material-icons">content_paste</i> Task</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" id="logoutBtn" href="javascript:;"><i
+                                        class="material-icons">power_settings_new</i>
+                                    Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu material-menu menu-fixed menu-light menu-accordion menu-shadow " data-scroll-to-active="true">
+        <div class="user-profile">
+
+        </div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item">
+                    <a href="../dashboard/index.html">
+
+                        <svg id="dashboard" xmlns="http://www.w3.org/2000/svg" width="19.068" height="19.068"
+                            viewBox="0 0 19.068 19.068">
+                            <g id="Group_268" data-name="Group 268">
+                                <g id="Group_267" data-name="Group 267">
+                                    <rect id="Rectangle_754" data-name="Rectangle 754" width="8.475" height="6.356"
+                                        transform="translate(10.593)" />
+                                    <rect id="Rectangle_755" data-name="Rectangle 755" width="8.475" height="10.593" />
+                                    <rect id="Rectangle_756" data-name="Rectangle 756" width="8.475" height="6.356"
+                                        transform="translate(0 12.712)" />
+                                    <rect id="Rectangle_757" data-name="Rectangle 757" width="8.475" height="10.593"
+                                        transform="translate(10.593 8.475)" />
+                                </g>
+                            </g>
+                        </svg>
+
+                        <span class="menu-title" data-i18n="Dashboard">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../users/users.html">
+                        <i></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.404" height="15.53"
+                            viewBox="0 0 24.404 15.53">
+                            <g id="group" transform="translate(0 -85.333)">
+                                <g id="Group_271" data-name="Group 271" transform="translate(0 85.333)">
+                                    <g id="Group_270" data-name="Group 270" transform="translate(0 0)">
+                                        <path id="Path_385" data-name="Path 385"
+                                            d="M259.328,91.989A3.328,3.328,0,1,0,256,88.661,3.321,3.321,0,0,0,259.328,91.989Z"
+                                            transform="translate(-242.689 -85.333)" />
+                                        <path id="Path_386" data-name="Path 386"
+                                            d="M88.661,91.989a3.328,3.328,0,1,0-3.328-3.328A3.321,3.321,0,0,0,88.661,91.989Z"
+                                            transform="translate(-80.896 -85.333)" />
+                                        <path id="Path_387" data-name="Path 387"
+                                            d="M7.765,256C5.175,256,0,257.3,0,259.883v2.773H15.53v-2.773C15.53,257.3,10.355,256,7.765,256Z"
+                                            transform="translate(0 -247.126)" />
+                                        <path id="Path_388" data-name="Path 388"
+                                            d="M300.483,256c-.322,0-.682.022-1.07.061a4.651,4.651,0,0,1,2.18,3.821v2.773h6.656v-2.773C308.248,257.3,303.074,256,300.483,256Z"
+                                            transform="translate(-283.844 -247.126)" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <span class="menu-title" data-i18n="User">User</span>
+                    </a>
+                </li>
+                <li class="active nav-item">
+                    <a href="../profile/profile.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22.42" height="20.344"
+                            viewBox="0 0 22.42 20.344">
+                            <g id="Group_272" data-name="Group 272" transform="translate(-23.498 -266.498)">
+                                <g id="user-shape" transform="translate(25.68 271.048)">
+                                    <g id="person">
+                                        <path id="Path_397" data-name="Path 397"
+                                            d="M7.9,7.9A3.948,3.948,0,1,0,3.948,3.948,3.96,3.96,0,0,0,7.9,7.9Zm0,1.974C5.232,9.871,0,11.154,0,13.82v1.974H15.794V13.82C15.794,11.154,10.562,9.871,7.9,9.871Z" />
+                                    </g>
+                                </g>
+                                <path id="Path_399" data-name="Path 399"
+                                    d="M4.051,4.373A2.186,2.186,0,0,0,5.2,2.457,2.393,2.393,0,0,0,3.058,0,3.834,3.834,0,0,0,1.489.211,9.846,9.846,0,0,1,0,2.5,10.677,10.677,0,0,1,4.051,4.373Z"
+                                    transform="matrix(0.999, -0.035, 0.035, 0.999, 37.085, 277.62)" />
+                                <path id="Path_400" data-name="Path 400"
+                                    d="M6.793,4.836a.458.458,0,0,0-.458-.458H5.394a4.347,4.347,0,0,0-.317-.761l.666-.666a.458.458,0,0,0,0-.648L4.57,1.13a.457.457,0,0,0-.648,0L3.255,1.8a4.279,4.279,0,0,0-.761-.316V.539A.457.457,0,0,0,2.037.081L1.156.051A3.114,3.114,0,0,0,.38.024,2.46,2.46,0,0,1,.466,1.271C.285,2.2.055,2.372,0,2.75a4.346,4.346,0,0,1,1.207.041A2.87,2.87,0,0,1,2.76,8.079,6.555,6.555,0,0,1,4.1,10.307a.47.47,0,0,0,.152.029.457.457,0,0,0,.324-.134L5.745,9.029a.461.461,0,0,0,0-.648l-.668-.667a4.328,4.328,0,0,0,.317-.761h.941A.459.459,0,0,0,6.794,6.5Z"
+                                    transform="matrix(0.999, -0.035, 0.035, 0.999, 38.769, 274.35)" />
+                                <path id="Path_390" data-name="Path 390"
+                                    d="M1.916,0A1.912,1.912,0,0,0,.73,3.411,4.139,4.139,0,0,1,3.467.8,1.913,1.913,0,0,0,1.916,0Z"
+                                    transform="matrix(0.966, -0.259, 0.259, 0.966, 27.204, 270.985)" />
+                                <path id="Path_391" data-name="Path 391"
+                                    d="M1.237,6.081a3.978,3.978,0,0,0,.28.673l-.589.589a.406.406,0,0,0,0,.573L1.966,8.955a.407.407,0,0,0,.574,0l.588-.589c.088.047.186.075.278.116,0-.007,0-.014,0-.02A6.041,6.041,0,0,1,3.559,7.1,2.561,2.561,0,1,1,7.168,3.687a4.467,4.467,0,0,1,1.447.042,3.867,3.867,0,0,0-.25-.6l.589-.59a.4.4,0,0,0,0-.573L7.917.928a.4.4,0,0,0-.573,0l-.591.59a3.8,3.8,0,0,0-.673-.279V.405A.4.4,0,0,0,5.676,0H4.207A.406.406,0,0,0,3.8.405v.833a3.836,3.836,0,0,0-.673.279L2.54.928a.405.405,0,0,0-.573,0L.928,1.966a.407.407,0,0,0,0,.574l.589.589a3.878,3.878,0,0,0-.279.673H.405A.405.405,0,0,0,0,4.207V5.676a.406.406,0,0,0,.405.405Z"
+                                    transform="matrix(0.966, -0.259, 0.259, 0.966, 23.498, 268.847)" />
+                            </g>
+                        </svg>
+
+
+                        <span class="menu-title" data-i18n="Profile">Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../security/security-policies.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.783" height="23.442"
+                            viewBox="0 0 17.783 23.442">
+                            <g id="shield" transform="translate(-7)">
+                                <path id="Path_403" data-name="Path 403"
+                                    d="M15.892,0S13.2,3.233,7,3.233v7.714a13.19,13.19,0,0,0,4.916,10.4,11.92,11.92,0,0,0,3.975,2.094,11.924,11.924,0,0,0,3.975-2.094,13.19,13.19,0,0,0,4.916-10.4V3.233C18.586,3.233,15.892,0,15.892,0Z"
+                                    transform="translate(0)" />
+                                <path id="Path_404" data-name="Path 404"
+                                    d="M19.467,25.545a9.82,9.82,0,0,1-2.477-1.438A10.822,10.822,0,0,1,13,15.612V10.173A14.7,14.7,0,0,0,19.467,7.83Z"
+                                    transform="translate(-3.575 -4.665)" fill="#707070" />
+                            </g>
+                        </svg>
+
+                        <span class="menu-title" data-i18n="Security">Security</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../dashboard/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.31" height="20.31" viewBox="0 0 20.31 20.31">
+                            <g id="statistics" transform="translate(0 0)">
+                                <path id="Path_401" data-name="Path 401"
+                                    d="M32.785,9.52a1.776,1.776,0,0,0,1.236-.5l1.761.881a1.747,1.747,0,0,0-.022.216,1.785,1.785,0,0,0,3.57,0,1.763,1.763,0,0,0-.179-.765l2.389-2.389a1.763,1.763,0,0,0,.765.179A1.787,1.787,0,0,0,44.09,5.355,1.758,1.758,0,0,0,44,4.826L46.077,3.27a1.784,1.784,0,1,0-.8-1.485,1.758,1.758,0,0,0,.089.529L43.293,3.87A1.777,1.777,0,0,0,40.7,6.12L38.31,8.509a1.754,1.754,0,0,0-2,.323l-1.761-.881a1.747,1.747,0,0,0,.022-.216A1.785,1.785,0,1,0,32.785,9.52Zm0,0"
+                                    transform="translate(-29.77)" />
+                                <path id="Path_402" data-name="Path 402"
+                                    d="M19.715,163.17H19.08V150.6a.6.6,0,0,0-.6-.6h-2.38a.6.6,0,0,0-.6.6V163.17H14.32v-9a.6.6,0,0,0-.6-.6h-2.38a.6.6,0,0,0-.6.6v9H9.56v-4.244a.6.6,0,0,0-.6-.6H6.585a.6.6,0,0,0-.6.6v4.244H4.8v-6.624a.6.6,0,0,0-.6-.6H1.825a.6.6,0,0,0-.6.6v6.624H.6a.6.6,0,1,0,0,1.19h19.12a.6.6,0,1,0,0-1.19Zm0,0"
+                                    transform="translate(0 -144.05)" />
+                            </g>
+                        </svg>
+
+
+                        <span class="menu-title" data-i18n="statistics">statistics</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-header row">
+            <div class="col">
+                <h4 class="pl-1">Role > <strong><span id="editRoleName"></span>Admin</strong></h4>
+            </div>
+        </div>
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+                <div class="edit_page_wrapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card min-ht" style="border-radius: 0;">
+                                <div class="card-content collapse show">
+                                    <div class="card-body card-dashboard p-2 position-relative">
+                                        <div class="user-info-wrapper">
+                                            <div class="badge badge-primary rounded-0">
+                                                <span>
+                                                    ROLE
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-1"
+                                                id="userNameEditDiv">
+                                                <div>
+                                                    <h4 class="mb-0" id="userNameSpan">
+                                                        Maker
+                                                    </h4>
+                                                </div>
+
+                                            </div>
+                                            <!-- <div class="d-flex justify-content-between align-items-center mt-1"
+                                                id="userEmailEditDiv">
+                                                <div>
+                                                    <h6 class="mb-0" id="userEmailSpan">
+                                                        soham@yashussunlimited.com
+                                                    </h6>
+                                                    <input type="text" class="form-control d-none" id="editUserEmail"
+                                                        name="editUserEmail" value="soham@yashussunlimited.com" />
+                                                </div>
+
+                                                <a href="javascript:;" class="edit-icon d-none"
+                                                    onclick="showEditInput('#editUserEmail','#userEmailSpan','.editImg2')">
+                                                    <img class="editImg2" src="../app-assets/images/svg/pencil.svg"
+                                                        alt="Edit User Name" />
+                                                </a>
+                                            </div> -->
+                                            <div class="statusbadgeDiv mt-1">
+                                                <span class="badge badge-pills badge-approved badge-rounded">
+                                                    Active
+                                                </span>
+                                            </div>
+                                            <div class="otherInfoDiv mt-1">
+                                                <span class="text-muted">
+                                                    Last sign in : About <span id="lastSignInHr">4</span> hours ago
+                                                </span>
+                                                <br />
+                                                <span class="text-muted">
+                                                    Created : <span id="userCreatedDate">June 06, 2023</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <hr class="position-absolute w-100" style="left: 0;">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="vertical-tabs-wrapper">
+                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <a class="nav-link pl-2 active" id="v-pills-home-tab" data-toggle="pill"
+                                                    href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                                    aria-selected="true">
+                                                    <h5 class="mb-0">
+                                                        Roles and Privileges
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-12 vertical-tab-panel ">
+                            <div class="card" style="border-radius: 0;">
+                                <div class="card-content collapse show">
+                                    <div class="card-body card-dashboard p-0 pt-2 position-relative">
+                                        <div class="d-flex justify-content-end pr-3">
+                                            <button type="button" class="btn btn-dark ml-1"> Cancel</button>
+                                            <button type="button" id="submitBtn" class="btn btn-primary ml-1"> Submit
+                                            </button>
+                                        </div>
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                                aria-labelledby="v-pills-home-tab">
+                                                <form class="row px-2 pt-0" id="editUserForm">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <h3 class="font-weight-bold">Creation</h3>
+                                                        <fieldset class="form-group pr-1">
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchUserPermissions">User</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchUserPermissions" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectUserPermissions"
+                                                                        class="single-select-box selectivity-input switchUserPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectUserPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchAppAssignPermissions">
+                                                                        Application Assignment</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchAppAssignPermissions" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectAppPermissions"
+                                                                        class="single-select-box selectivity-input switchAppAssignPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectAppPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchRolePermissions">Role
+                                                                        Access</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchRolePermissions" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectRolePermissions"
+                                                                        class="single-select-box selectivity-input switchRolePermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectRolePermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 0;">
+                                <div class="card-content collapse show">
+                                    <div class="card-body card-dashboard p-0 pt-2 position-relative">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                                aria-labelledby="v-pills-home-tab">
+                                                <form class="row px-2 pt-0" id="editUserForm">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <h3 class="font-weight-bold">Approvals</h3>
+                                                        <fieldset class="form-group pr-1">
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsUserPermissions">User</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsUserPermissions"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsUserPermissions"
+                                                                        class="single-select-box selectivity-input switchApprovalsUserPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsUserPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsAppAssignPermissions">
+                                                                        Application Assignment</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsAppAssignPermissions"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsAppPermissions"
+                                                                        class="single-select-box selectivity-input switchApprovalsAppAssignPermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsAppPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsRolePermissions">Role Access
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsRolePermissions"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsRolePermissions"
+                                                                        class="single-select-box selectivity-input switchApprovalsRolePermissions"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsRolePermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 0;">
+                                <div class="card-content collapse show">
+                                    <div class="card-body card-dashboard p-0 pt-2 position-relative">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                                aria-labelledby="v-pills-home-tab">
+                                                <form class="row px-2 pt-0" id="editUserForm">
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <h3 class="font-weight-bold">Reports</h3>
+                                                        <fieldset class="form-group pr-1">
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0" for="switchApprovalsReportView">View
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsReportView" checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsReportView"
+                                                                        class="single-select-box selectivity-input switchApprovalsReportView"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsUserPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center pb-1">
+                                                                <div class="col-lg-3">
+                                                                    <p class="mb-0"
+                                                                        for="switchApprovalsReportsDownload">
+                                                                        Download and Share</p>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    <label class="switch-custom ml-1">
+                                                                        <input type="checkbox"
+                                                                            class="permissions-switch"
+                                                                            id="switchApprovalsReportsDownload"
+                                                                            checked />
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select id="selectApprovalsReportsDownload"
+                                                                        class="single-select-box selectivity-input switchApprovalsReportsDownload"
+                                                                        data-placeholder="Select permissions"
+                                                                        name="selectApprovalsAppPermissions">
+                                                                        <option>Add</option>
+                                                                        <option>Edit</option>
+                                                                        <option>View</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                        </fieldset>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2023 <a
+                    class="text-bold-800 grey darken-2" href="#!" target="_blank">HDFC</a>
+            </span>
+            <span class="float-md-right d-none d-lg-block"></span>
+            <span id="scroll-top"></span></span>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+
+    <div class="modal fade success-modal" id="successModal" tabindex="-1" role="dialog"
+        aria-labelledby="successModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <div ></div> -->
+                    <!-- <img src="../assets/images/modal-bg.png"/> -->
+                    <div class="d-flex align-items-center toastr-modal-wrapper">
+                        <i class="ft ft-check-circle pr-2"></i>
+                        <h5 class="modal-title text-black mb-0" id="successModalTitle">
+                            Success
+                        </h5>
+                    </div>
+                    <p class="text-black pl-4" id="successModalText">Request send for approval</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/material-vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <script src="../app-assets/js/sweetalert2.all.min.js"></script>
+    <script src="../app-assets/js/polyfill.min.js"></script>
+
+    <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/pages/material-app.js"></script>
+    <!-- END: Page JS-->
+
+    <!-- DataTablke Js -->
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <!-- DataTablke Js -->
+
+    <!-- select2 js -->
+    <script defer src="../app-assets/vendors/js/forms/select/select2.js"></script>
+    <!-- select2 js Ends-->
+
+    <script src="../assets/js/main.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.selectivity-input').val(null).select2({
+                allowClear: true,
+                multiple: true,
+            });
+
+            $('.selectivity-input').on("change", function () {
+                let selectedValues = $(this).val();
+                let resultString = selectedValues.join(", ");
+                $(this).next().find('.select2-selection__rendered').html(resultString);
+            });
+
+            $(".permissions-switch").click(function () {
+                if ($(this).is(":checked")) {
+                    $("." + $(this).attr('id')).attr('disabled', false);
+                } else {
+                    $("." + $(this).attr('id')).attr('disabled', true);
+                }
+            });
+
+            $("#submitBtn").click(function () {
+                // $("#successModal").modal('show');
+                success_notification("Success", "Request send for approval", "success");
+
+            });
+        });
+
+
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>
